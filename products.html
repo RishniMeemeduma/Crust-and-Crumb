@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barry's Stationery Shop | Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Barry's Stationery Shop</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Products</h2>
+
+  <div class="products">
+    <div class="product">
+      <img src="pencil.jpg" alt="HB pencil">
+      <h3>Pencil</h3>
+      <p>An HB pencil for writing and drawing.</p>
+      <p>£0.50</p>
+      <button onclick="addToBasket('Pencil')">Add to basket</button>
+    </div>
+
+    <div class="product">
+      <img src="pen.jpg" alt="Blue ballpoint pen">
+      <h3>Pen</h3>
+      <p>A blue ballpoint pen for everyday writing.</p>
+      <p>£1.00</p>
+      <button onclick="addToBasket('Pen')">Add to basket</button>
+    </div>
+
+    <div class="product">
+      <img src="rubber.jpg" alt="White pencil rubber">
+      <h3>Rubber</h3>
+      <p>A small rubber for correcting pencil marks.</p>
+      <p>£0.75</p>
+      <button onclick="addToBasket('Rubber')">Add to basket</button>
+    </div>
+  </div>
+
+  <h2>Basket</h2>
+  <p id="basket">Your basket is empty.</p>
+</main>
+
+<footer>
+  <p>Barry's Stationery Shop</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
