@@ -1,2 +1,2 @@
-# Bakery-ecommerce-website
+# Crust and Crumb-website
 an accessible click-and-collect bakery and deli prototype (HTML, CSS, JavaScript). 
