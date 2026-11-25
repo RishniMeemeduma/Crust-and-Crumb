@@ -37,8 +37,9 @@
       }).join("\n      ");
 
       this.innerHTML =
+        '<a class="skip-link" href="#main">Skip to main content</a>\n' +
         "<header>\n" +
-        "  <h1>" + SITE_NAME + "</h1>\n" +
+        '  <p class="site-name"><a href="' + SITE_ROOT + 'index.html">' + SITE_NAME + "</a></p>\n" +
         '  <nav aria-label="Main">\n' +
         "      " + links + "\n" +
         "  </nav>\n" +

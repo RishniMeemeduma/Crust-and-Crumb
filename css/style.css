@@ -1,31 +1,35 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
+/* Layout and component styles. Tokens and base element styles live in base.css. */
 
 header, main, footer {
   max-width: 1000px;
   margin: auto;
-  padding: 20px;
+  padding: var(--space-lg);
 }
 
 header {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid var(--color-border);
 }
 
 nav a {
-  margin-right: 20px;
+  margin-right: var(--space-lg);
+}
+
+nav a[aria-current="page"] {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
 }
 
 .products {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
 }
 
 .product {
-  border: 1px solid #cccccc;
-  padding: 15px;
-  width: 30%;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  padding: var(--space-md);
 }
 
 .product img {
@@ -34,26 +38,31 @@ nav a {
 
 label {
   display: block;
-  margin-top: 15px;
+  margin-top: var(--space-md);
 }
 
 input, textarea {
   width: 100%;
-  padding: 8px;
+  padding: var(--space-sm);
 }
 
 button {
-  margin-top: 10px;
-  padding: 8px 12px;
+  margin-top: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
 }
 
 footer {
-  margin-top: 30px;
-  border-top: 1px solid #cccccc;
+  margin-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
 }
 
-nav a[aria-current="page"] {
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid currentColor;
+
+
+@media (min-width: 40rem) {
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
 }
+
+ 

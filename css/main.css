@@ -1,0 +1,4 @@
+/* Single stylesheet entry point. Pages link only this file.
+   Add or rename stylesheets here instead of in every HTML page. */
+@import "base.css";
+@import "style.css";
